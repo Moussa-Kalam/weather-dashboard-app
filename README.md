@@ -28,7 +28,20 @@ Follow these steps to set up and run the application locally.
    cd weather-dashboard
    npm install
    ```
-3. **Run the application**
+
+3. ** Create an account on [Weather API](https://www.weatherapi.com/)**
+   - Sign up for a free account on [Weather API](https://www.weatherapi.com/).
+   - Copy your API key from the dashboard.
+   
+
+3.  **Create a .env file**
+    - Create a `.env` file in the root directory.
+    - Add the following environment variables:
+    - VITE_API_KEY=**[Paste your API key here and remove the square brackets]**
+      VITE_API_URL=https://api.weatherapi.com/v1/forecast.json
+    
+      
+5. **Run the application**
    ```bash
    npm run dev
    ```
