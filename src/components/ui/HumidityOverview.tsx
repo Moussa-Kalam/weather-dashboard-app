@@ -1,6 +1,6 @@
 import { HumidityIcon } from "../icons";
 import { useWeatherData } from "../../hooks";
-import {useQueryStore} from "../../store";
+import { useQueryStore } from "../../stores";
 
 const HumidityOverview = () => {
   const city = useQueryStore((state) => state.city);
