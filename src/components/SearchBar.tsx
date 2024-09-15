@@ -21,7 +21,7 @@ const SearchBar = () => {
 
   return (
     <form
-      className="flex flex-col gap-3  md:flex-row justify-between items-center w-[80%] mx-auto"
+      className="flex flex-col gap-8 md:flex-row justify-between items-center w-[80%] mx-auto"
       onSubmit={handleSubmit}
     >
       <Location country={country} city={city} />
