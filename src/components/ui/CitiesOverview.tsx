@@ -9,8 +9,8 @@ const CitiesOverview = () => {
 
   return (
     <section>
-      <h2 className="text-center relative -top-10">Other cities</h2>
-      <div className="grid grid-cols-2 gap-6">
+      <h2 className="text-center mb-4 md:mb-0 md:-top-6">Other cities</h2>
+      <div className="flex justify-center flex-wrap md:grid md:grid-cols-2 gap-6">
         {citiesWeather.map(({ city, country, weather, icon }) => (
           <CityItem
             key={city}

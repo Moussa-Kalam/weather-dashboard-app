@@ -5,9 +5,9 @@ interface LocationProps {
   country: string;
 }
 
-const Location = ({ city, country }: LocationProps) => {
+const Location = ({ city = "Kigali", country = "Rwanda" }: LocationProps) => {
   return (
-    <div className="flex gap-2 font-light">
+    <div className="flex gap-2 font-light shrink-0">
       <LocationIcon />
       <h2 className="text-[#FEFEFE]">
         {city}, {country}

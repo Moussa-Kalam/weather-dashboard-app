@@ -1,9 +1,9 @@
 import useWeatherData from "../../hooks/useWeatherData.ts";
 import getDayAndTime from "../../utils/getDayAndTime.ts";
-import { useLocationStore, useQueryStore } from "../../store";
+import { useLocationStore, useQueryStore } from "../../stores";
 
 const TodayOverview = () => {
-  const city = useQueryStore((state) => state.city);
+  const city = useQueryStore((state) => state.query);
   const { data: weatherData, isLoading, error } = useWeatherData(city);
   const setLocation = useLocationStore((state) => state.setLocation);
 
@@ -18,7 +18,7 @@ const TodayOverview = () => {
   if (!isLoading && error) return <p>There is an error getting the data</p>;
 
   return (
-    <article className="border w-fit rounded-3xl space-y-4  bg-[#BBD7EC] text-black">
+    <article className="border rounded-3xl space-y-4 w-[21.875rem] mx-auto lg:w-fit bg-[#BBD7EC] text-black ">
       <section className="flex justify-between p-5 font-bold bg-[#AECADF] rounded-t-3xl">
         <h2>{longDay}</h2>
         <p>{time}</p>

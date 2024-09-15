@@ -1,13 +1,13 @@
 import { create } from "zustand";
 
 interface Query {
-  city: string;
-  setCity: (city: string) => void;
+  query: string;
+  setQuery: (city: string) => void;
 }
 
 const useQueryStore = create<Query>()((set) => ({
-  city: "Kigali",
-  setCity: (city) => set({ city }),
+  query: "Kigali",
+  setQuery: (query) => set({ query }),
 }));
 
 export default useQueryStore;

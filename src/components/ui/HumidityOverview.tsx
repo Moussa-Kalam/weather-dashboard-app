@@ -3,14 +3,14 @@ import { useWeatherData } from "../../hooks";
 import { useQueryStore } from "../../stores";
 
 const HumidityOverview = () => {
-  const city = useQueryStore((state) => state.city);
+  const city = useQueryStore((state) => state.query);
   const { data: weatherData, isLoading, error } = useWeatherData(city);
 
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>There was an error while fetching the data</p>;
 
   return (
-    <article className="flex flex-col gap-8  bg-[#1B1B1D]  w-[21.875rem] rounded-2xl p-6">
+    <article className="flex flex-col gap-8 bg-[#1B1B1D] w-[21.875rem] rounded-2xl p-6 h-fit mx-auto mb-6 md:mb-0">
       <h2>Humidity</h2>
       <img
         src="/humidity.png"

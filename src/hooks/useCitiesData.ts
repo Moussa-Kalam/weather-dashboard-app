@@ -44,14 +44,15 @@ const useCitiesData = () => {
         const citiesWeather = await Promise.all(weatherDataPromises);
         setCitiesWeather(citiesWeather);
       };
+
       fetchCityWeather();
+
+      return () => controller.abort();
     } catch (error) {
       setError((error as AxiosError).message);
     } finally {
       setIsLoading(false);
     }
-
-    return () => controller.abort();
   }, []);
 
   return { citiesWeather, isLoading, error };
