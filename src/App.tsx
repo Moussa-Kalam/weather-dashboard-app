@@ -1,5 +1,9 @@
 const App = () => {
-  return <h1 className="text-red-800">Hello World</h1>;
+  return (
+    <main className="min-h-screen text-white py-8 bg-background-black space-y-6">
+      <h1>Welcome to your favorite weather dashboard</h1>
+    </main>
+  );
 };
 
 export default App;
