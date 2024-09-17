@@ -1,12 +1,12 @@
 # Weather Dashboard App
 
 ## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies](#technologies)
-- [Contributing](#contributing)
+- [Overview](#Overview)
+- [Features](#Features)
+- [Installation](#Installation)
+- [Usage](Usage)
+- [Technologies](#Technologies)
+- [Contributing](#Contributing)
 
 ## Overview
 The **Weather Dashboard App** provides real-time weather data for any location worldwide. It allows users to view current weather conditions, temperature, humidity, and a 5-day weather forecast. This tool is perfect for travelers, commuters, or anyone wanting to keep an eye on the weather.
